@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=e_commerce'
+      - 'POSTGRES_PASSWORD=root'
+      - 'POSTGRES_USER=root'
+    ports:
+      - '5432:5432'
+    volumes:
+      - e_commerce:/var/lib/postgresql/data
+
+volumes:
+  e_commerce:

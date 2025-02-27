@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: Simple E-commerce API
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/e_commerce
+    username: root
+    password: root
+
+  jpa:
+    show-sql: true

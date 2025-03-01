@@ -1,6 +1,6 @@
 services:
   postgres:
-    image: 'postgres:latest'
+    image: 'postgres:alpine'
     environment:
       - 'POSTGRES_DB=e_commerce'
       - 'POSTGRES_PASSWORD=root'
